@@ -9,7 +9,7 @@
 
 ## 📖 A. Deskripsi Singkat Aplikasi
 
-**SIAKAD UNSUR** *(Sistem Informasi Akademik Universitas Suryakancana)* adalah platform digital terintegrasi yang dirancang untuk memfasilitasi pengelolaan kurikulum, jadwal perkuliahan, dan administrasi akademik secara komprehensif.
+**SIAKAD FT-UNSUR** *(Sistem Informasi Akademik Fakultas Teknik Universitas Suryakancana)* adalah platform digital terintegrasi yang dirancang untuk memfasilitasi pengelolaan kurikulum, jadwal perkuliahan, dan administrasi akademik secara komprehensif.
 
 Aplikasi ini dibangun menggunakan arsitektur modern berbasis **Laravel 11**, **Tailwind CSS v4**, dan database **MySQL**. Sistem ini menerapkan pembatasan hak akses yang ketat melalui *Multi-role Middleware* untuk menjamin keamanan dan segregasi data antar pengguna.
 
