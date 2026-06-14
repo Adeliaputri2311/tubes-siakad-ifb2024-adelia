@@ -78,12 +78,12 @@ php artisan key:generate
 
 
 Buka file `.env` dan pastikan nama database Anda sesuai:
-DB_CONNECTION=mysql
+**DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=siakad-app
 DB_USERNAME=root
-DB_PASSWORD=
+DB_PASSWORD=**
 
 ### 4. Migrasi & Seeding
 
