@@ -59,14 +59,19 @@
         </div>
     </div>
 
+    <!-- SEKTOR PROFILE UTAMA DENGAN AKTIVASI DIALIKAN SECARA DINAMIS -->
     <div class="flex flex-col space-y-4 pt-4 border-t border-slate-100">
-        <a href="{{ route('profile.edit') }}" class="flex items-center space-x-3 p-2 rounded-xl hover:bg-slate-50 transition duration-150">
-            <div class="h-9 w-9 bg-slate-100 text-slate-600 rounded-xl font-bold flex items-center justify-center text-sm uppercase border border-slate-200">
+        <a href="{{ route('profile.edit') }}" 
+           class="flex items-center space-x-3 p-2.5 rounded-xl transition duration-150 {{ request()->routeIs('profile.edit') ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/20 font-semibold' : 'hover:bg-slate-50' }}">
+            
+            <!-- Inisial Avatar Mengikuti Perubahan State Warna Induk -->
+            <div class="h-9 w-9 rounded-xl font-bold flex items-center justify-center text-sm uppercase border {{ request()->routeIs('profile.edit') ? 'bg-blue-700 text-white border-blue-500' : 'bg-slate-100 text-slate-600 border-slate-200' }}">
                 {{ substr(Auth::user()->name, 0, 2) }}
             </div>
+            
             <div class="flex flex-col min-w-0 flex-1">
-                <span class="text-sm font-semibold text-slate-800 truncate">{{ Auth::user()->name }}</span>
-                <span class="text-[11px] text-slate-400 font-medium truncate uppercase tracking-wider">{{ Auth::user()->role }}</span>
+                <span class="text-sm font-semibold truncate {{ request()->routeIs('profile.edit') ? 'text-white' : 'text-slate-800' }}">{{ Auth::user()->name }}</span>
+                <span class="text-[11px] font-medium truncate uppercase tracking-wider {{ request()->routeIs('profile.edit') ? 'text-blue-100/90' : 'text-slate-400' }}">{{ Auth::user()->role }}</span>
             </div>
         </a>
 
