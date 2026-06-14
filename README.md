@@ -1,4 +1,4 @@
-# 📚 SIAKAD UNSUR - Sistem Informasi Akademik
+# 📚 SIAKAD FT-UNSUR - Sistem Informasi Akademik
 
 [![Laravel Version](https://img.shields.io/badge/Laravel-v11.x-FF2D20?logo=laravel&logoColor=white)](https://laravel.com)
 [![TailwindCSS Version](https://img.shields.io/badge/TailwindCSS-v4.0-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
