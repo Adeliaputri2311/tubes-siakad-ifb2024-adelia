@@ -15,18 +15,11 @@ class KrsController extends Controller
     {
         $user = auth()->user();
         
-        // 1. Ambil data mahasiswa yang sedang login
-        $mahasiswa = \App\Models\Mahasiswa::where('npm', $user->identitas_id)->firstOrFail();
-        
-        // 2. Ambil semua list jadwal yang tersedia untuk ditampilkan di tabel bawah
-        // Pastikan menggunakan eager loading 'with' agar relasi matakuliah dan dosen terbaca
-        $jadwals = \App\Models\Jadwal::with(['matakuliah', 'dosen'])->get();
-        
-        // 3. Ambil kode mata kuliah yang sudah diambil mahasiswa ini agar tidak double input
-        $krs_diambil = \App\Models\Krs::where('npm', $mahasiswa->npm)->with('matakuliah')->get();
-        $kode_diambil = $krs_diambil->pluck('kode_matakuliah')->toArray();
-
-        return view('mahasiswa.krs.index', compact('jadwals', 'krs_diambil', 'kode_diambil'));
+        dd([
+            'user' => $user,
+            'identitas_id' => $user->identitas_id,
+            'mahasiswa' => Mahasiswa::where('npm', $user->identitas_id)->first(),
+        ]);
     }
 
     public function store(Request $request) {
