@@ -152,6 +152,7 @@ php artisan serve
 
 ✅ **Aplikasi kini dapat diakses penuh melalui tautan:** [`http://localhost:8000`](http://localhost:8000)
 
+
 ---
 
 ## 👨‍💻 E. Profil Pengembang
@@ -164,7 +165,9 @@ php artisan serve
 | **Konteks Proyek** | Tugas Besar Mata Kuliah Pemrograman Web II |
 
 ---
-
+## hosting 
+(https://tubes-siakad-ifb2024-adelia-production-6e55.up.railway.app/)
+---
 ## 📄 Lisensi
 
 Proyek aplikasi sistem informasi akademik ini didistribusikan di bawah ketentuan [MIT License](LICENSE).
